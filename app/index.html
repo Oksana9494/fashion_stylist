@@ -5,9 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>ОТКРЫТЬ ПРОЕКТ В ТЕРМИНАЛЕ И ВВЕСТИ КОМАНДУ "npm i"</h1>
+    <header class="header">
+        <a href="#"><img src="images/logo.png" alt="" class="header__logo"></a> 
+        <ul class="header-menu">
+            <li class="header-menu-item"><a href="#" class="header-menu__link">Почему мы</a></li>
+            <li class="header-menu-item"><a href="#" class="header-menu__link">Наши работы</a></li>
+            <li class="header-menu-item"><a href="#" class="header-menu__link">О нас</a></li>
+            <li class="header-menu-item"><a href="#" class="header-menu__link">Отзывы</a></li>
+            <li class="header-menu-item"><a href="tel:18000000000" class="header-menu__phone">1-800-000-0000</a></li>
+        </ul>
+        <button class="header-booking">Запись</button> 
+        <div class="header-socials">
+            <a class="header-socials__link" href="#"><img src="./images/FB.svg" alt=""></a>
+            <a class="header-socials__link" href="#"><img src="./images/twitter.svg" alt=""></a>
+            <a class="header-socials__link" href="#"><img src="./images/google-plus.svg" alt=""></a>            
+        </div>       
+    </header>
+    <div class="page-main">
+        <div class="container container_wide">
+            <div class="page-main-content">
+                <h1 class="page-main__title">Индивидуальный подбор одежды</h1>
+                <p class="page-main__subtitle">Более 120 моделей больших размеров</p>
+                <button class="page-main__btn">Запись</button>
+            </div>
+            <div class="page-main-images">
+                <img src="./images/barbara-palvin.png" alt="" class="page-main__img">
+                <svg class="page-main__svg" xmlns="http://www.w3.org/2000/svg" width="665" height="665" viewBox="0 0 175.948 175.948">
+                    <circle cx="87.974" cy="87.974" r="86.519" fill="#e0c4b1"/>
+                    <circle cx="88.106" cy="88.106" r="69.85" fill="#fff"/>
+                    <circle cx="88.106" cy="88.106" r="51.594" fill="#ffe1cc"/>
+                </svg>
+            </div>
+        </div>
+        <p class="page-main__text">+ANY SIZES</p>
+    </div>
+    <div class="page page-advantages">
+        <div class="container">
+            <div class="page-advantages-images">
+                <div>
+                    <div class="page-advantages-wrap-img page-advantages-wrap-img_long">
+                        <img src="./images/girl2.jpg" alt="" class="page-advantages__img">
+                        <svg class="page-advantages__paral" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
+                            <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
+                        </svg>
+                    </div>                    
+                </div>
+                <div>
+                    <div class="page-advantages-wrap-img page-advantages-wrap-img_small">
+                        <img src="./images/blouses.jpg" alt="" class="page-advantages__img">
+                    </div>
+                    <div class="page-advantages-wrap-img page-advantages-wrap-img_wide">
+                        <img src="./images/scarves.jpg" alt="" class="page-advantages__img">
+                    </div>
+                    <svg class="page-advantages__squares" xmlns="http://www.w3.org/2000/svg" width="83" height="67">
+                        <path data-name="Rectangle 5 copy 9" d="M0 0h6.875v6.81H0V0zm15.219 0h6.875v6.81h-6.875V0zm15.218 0h6.875v6.81h-6.875V0zm15.25 0h6.875v6.81h-6.875V0zm15.219 0h6.875v6.81h-6.875V0zm15.219 0H83v6.81h-6.875V0zM0 15.06h6.875v6.78H0v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.218 0h6.875v6.78h-6.875v-6.78zm15.25 0h6.875v6.78h-6.875v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.219 0H83v6.78h-6.875v-6.78zM0 30.09h6.875v6.82H0v-6.82zm15.219 0h6.875v6.82h-6.875v-6.82zm15.218 0h6.875v6.82h-6.875v-6.82zm15.25 0h6.875v6.82h-6.875v-6.82zm15.219 0h6.875v6.82h-6.875v-6.82zm15.219 0H83v6.82h-6.875v-6.82zM0 45.16h6.875v6.78H0v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.218 0h6.875v6.78h-6.875v-6.78zm15.25 0h6.875v6.78h-6.875v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.219 0H83v6.78h-6.875v-6.78zM0 60.19h6.875V67H0v-6.81zm15.219 0h6.875V67h-6.875v-6.81zm15.218 0h6.875V67h-6.875v-6.81zm15.25 0h6.875V67h-6.875v-6.81zm15.219 0h6.875V67h-6.875v-6.81zm15.219 0H83V67h-6.875v-6.81z" fill="#cfcfcf" fill-rule="evenodd"/>
+                    </svg>
+                </div>      
+            </div>
+            <div class="page-advantages-content">
+                <p class="page__subtitle">Почему мы</p>
+                <h2 class="page__title">Одного размера бывает недостаточно</h2>
+                <p class="page__desc">
+                    В оversize мы стараемся избегать ограничений, установленных
+                    современным обществом, чтобы помочь Вам выглядеть потрясающе и
+                    привлекательно круглый год.
+                </p>
+                <div class="page-list">
+                    <div class="page-list-item">
+                        <div class="page-advantages__icon"><img src="./images/icon21.png" alt=""></div>
+                        <div>
+                            <h4 class="page-list-item__title">Большая размерная сетка</h4>
+                            <p class="page-list-item__desc">В oversize мы стараемся избегать ограничений.</p>
+                        </div>
+                    </div>
+                    <div class="page-list-item">
+                        <div class="page-advantages__icon"><img src="./images/icon22.png" alt=""></div>
+                        <div>
+                            <h4 class="page-list-item__title">100% доверие к качеству</h4>
+                            <p class="page-list-item__desc">Поможем Вам выглядеть потрясающе и привлекательно круглый год
+                                круглый.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="page__btn">Запись</button>
+            </div>
+        </div>
+    </div>
+    <div class="page page-works">
+        <div class="page-works_squares_beige"></div>
+        <div class="container">
+            <div class="block-content">
+                <p class="page-works__text">GALLERY</p>
+                <p class="page__subtitle">Наша модная одежда работает</p>
+                <h2 class="page__title">Модный размер не всегда подходит</h2>
+                <p class="page__desc">
+                    В оversize мы стараемся избегать ограничений, установленных
+                    современным обществом, чтобы помочь Вам выглядеть потрясающе и
+                    привлекательно круглый год.
+                </p>
+            </div>
+            <div class="page-works-images">
+                <div>
+                    <div class="page-works-images-item">
+                        <div class="page-works__square page-works__square_middle"></div>
+                        <img src="./images/blouses31.jpg" alt="" class="page-works__img">
+                    </div>
+                    <div class="page-works-images-item">
+                        <div class="page-works__rectangle"></div>
+                        <img src="./images/jackets.jpg" alt="" class="page-works__img">
+                    </div>
+                    <svg class="page-works__squares" xmlns="http://www.w3.org/2000/svg" width="83" height="67">
+                        <path data-name="Rectangle 5 copy 9" d="M0 0h6.875v6.81H0V0zm15.219 0h6.875v6.81h-6.875V0zm15.218 0h6.875v6.81h-6.875V0zm15.25 0h6.875v6.81h-6.875V0zm15.219 0h6.875v6.81h-6.875V0zm15.219 0H83v6.81h-6.875V0zM0 15.06h6.875v6.78H0v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.218 0h6.875v6.78h-6.875v-6.78zm15.25 0h6.875v6.78h-6.875v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.219 0H83v6.78h-6.875v-6.78zM0 30.09h6.875v6.82H0v-6.82zm15.219 0h6.875v6.82h-6.875v-6.82zm15.218 0h6.875v6.82h-6.875v-6.82zm15.25 0h6.875v6.82h-6.875v-6.82zm15.219 0h6.875v6.82h-6.875v-6.82zm15.219 0H83v6.82h-6.875v-6.82zM0 45.16h6.875v6.78H0v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.218 0h6.875v6.78h-6.875v-6.78zm15.25 0h6.875v6.78h-6.875v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.219 0H83v6.78h-6.875v-6.78zM0 60.19h6.875V67H0v-6.81zm15.219 0h6.875V67h-6.875v-6.81zm15.218 0h6.875V67h-6.875v-6.81zm15.25 0h6.875V67h-6.875v-6.81zm15.219 0h6.875V67h-6.875v-6.81zm15.219 0H83V67h-6.875v-6.81z" fill="#cfcfcf" fill-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="page-works-images-item">
+                        <div class="page-works__square page-works__square_right"></div>
+                        <img src="./images/blouses32.jpg" alt="" class="page-works__img">
+                    </div>
+                    <div class="page-works-images-item">
+                        <div class="page-works__square page-works__square_right"></div>
+                        <img src="./images/dress.jpg" alt="" class="page-works__img">
+                        <svg class="page-works__paral" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
+                            <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div class="page-works-images-item">
+                        <div class="page-works__square page-works__square_right"></div>
+                        <img src="./images/girl31.jpg" alt="" class="page-works__img">
+                    </div>
+                </div>                                            
+            </div>
+        </div>
+    </div> 
+    <div class="page page-about">
+        <div class="container">
+            <div class="page-about-content">
+                <p class="page__subtitle">О нас</p>
+                <h2 class="page__title">Мы всегда сотрудничаем с лучшими производителями одежды</h2>
+                <p class="page__desc">
+                    В оversize мы стараемся избегать ограничений, установленных
+                    современным обществом, чтобы помочь Вам выглядеть потрясающе и
+                    привлекательно круглый год.
+                </p>
+                <h4 class="page__title-small">Качество соответствует всем Вашим потребностям</h4>
+                <p class="page__desc">В oversize мы стараемся избегать ограничений.</p>
+                <h4 class="page__title-small">100% доверие к качеству</h4>
+                <p class="page__desc">Поможем Вам выглядеть потрясающе и привлекательно круглый год</p>
+            </div>
+            <div class="page-about-images">
+                <div class="page-about__rectangle">
+                    <svg class="page-about__paral_top" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
+                        <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
+                    </svg>
+                    <svg class="page-about__paral page-about__paral_bottom" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
+                        <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
+                    </svg>
+                </div>
+                <img src="./images/ethnic_patterns.jpg" alt="" class="page-about__img">
+            </div>                      
+        </div>
+    </div> 
+    <div class="page-reviews">
+        <div class="container container-wide">
+            <div class="page-reviews-content">
+                <h2 class="page-title">Что наши клиенты говорят о нас</h2>
+                <p class="page__desc">
+                    Ищете проверенных стилистов, которые помогут подобрать качественный и 
+                    модный гардероб, выгодно подчеркивающий достоинства вашей внешности? 
+                    Почитайте отзывы о нас, это поможет сделать правильный выбор.
+                </p>
+                <div class="page-reviews-slider">
+                    <div>
+                        <p class="page-reviews-slider__text">
+                            Здесь работают стилисты, которые очень любят свое дело и наслаждаются 
+                            процессом и результатом своей работы. С ними невероятно просто и легко 
+                            все получается в лучшем виде. Я каждый раз с нетерпением жду встречи, 
+                            потому что они невероятно теплые люди и результат нашей встречи вызывает 
+                            у меня восхищение, счастье, восторг и много любви :-)) Если вы хотите одеваться 
+                            комфортно и красиво, получать много комплиментов и радоваться своему отражению 
+                            в зеркале и радовать окружающих, тогда вам непременно к команде стилистов "Fashion stylist"!
+                        </p>
+                        <p class="page-reviews-slider__name">Маша Иванова</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page-reviews-images">
+                <div>
+                    <img src="./images/Ellipse_copy15.svg" alt="" class="page-reviews__circles">
+                    <img src="./images/jeans.jpg" alt="" class="page-reviews__img_small">
+                </div>
+                <div>
+                    <img src="./images/dress51.jpg" alt="" class="page-reviews__img">
+                    <img src="./images/dummy.jpg" alt="" class="page-reviews__img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <img src="" alt="" class="logo">
+            <div class="wrapper">
+                <div class="info">
+                    <div>
+                        <p class="info-title">Меню</p>
+                        <ul class="info-list">
+                            <li class="info-list-item"><a href="#">Почему мы</a></li>
+                            <li class="info-list-item"><a href="#">Наши работы </a></li>
+                            <li class="info-list-item"><a href="#">О нас</a></li>
+                            <li class="info-list-item"><a href="#">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="info-title">Контакты</p>
+                        <ul class="info-list">
+                            <li class="info-list-item">Телефон: <a href="tel:18000000000">1-800-000-0000</a></li>
+                            <li class="info-list-item">E-mail: <a href="mailto:admin@lyandex.ru">admin@lyandex.ru</a></li>
+                            <li class="info-list-item">Адрес: ул. Красная 15</li>
+                            <li class="info-list-item">Город: Москва, 353000</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="info-title">Часы работы</p>
+                        <p class="info-text">Пн-пт с 10.00 до 19.00</p>
+                        <p class="info-text">Сб с 10.00 до 14.00</p>
+                        <p class="info-text">Вс выходной</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <p class="feedback-title">Оставьте вашу электронную почту и мы с вами свяжемся</p>
+                    <div class="feedback-form">
+                        <input type="email" class="feedback-form__input">
+                        <button class="feedback-form__btn">Отправить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-socials">
+                <a class="block-socials__link" href="#"><img src="./images/FB.svg" alt=""></a>
+                <a class="block-socials__link" href="#"><img src="./images/twitter.svg" alt=""></a>
+                <a class="block-socials__link" href="#"><img src="./images/google-plus.svg" alt=""></a>
+                <a class="block-socials__link" href="#"><img src="./images/instagram.svg" alt=""></a>
+            </div>
+            <p class="credits">2021 Copyright.fashoinstyle.com</p>
+        </div>
+    </footer>
+
     <script src="js/main.min.js"></script>
 </body>
 </html>
