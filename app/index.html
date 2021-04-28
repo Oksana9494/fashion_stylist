@@ -6,26 +6,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <a href="#"><img src="images/logo.png" alt="" class="header__logo"></a> 
-        <ul class="header-menu">
-            <li class="header-menu-item"><a href="#" class="header-menu__link">Почему мы</a></li>
-            <li class="header-menu-item"><a href="#" class="header-menu__link">Наши работы</a></li>
-            <li class="header-menu-item"><a href="#" class="header-menu__link">О нас</a></li>
-            <li class="header-menu-item"><a href="#" class="header-menu__link">Отзывы</a></li>
-            <li class="header-menu-item"><a href="tel:18000000000" class="header-menu__phone">1-800-000-0000</a></li>
-        </ul>
-        <button class="header-booking">Запись</button> 
-        <div class="header-socials">
-            <a class="header-socials__link" href="#"><img src="./images/FB.svg" alt=""></a>
-            <a class="header-socials__link" href="#"><img src="./images/twitter.svg" alt=""></a>
-            <a class="header-socials__link" href="#"><img src="./images/google-plus.svg" alt=""></a>            
-        </div>       
+        <div class="container container_very-wide">
+            <a href="#"><img src="images/logo.png" alt="" class="header__logo"></a> 
+            <ul class="header-menu">
+                <li class="header-menu-item"><a href="#" class="header-menu__link">Почему мы</a></li>
+                <li class="header-menu-item"><a href="#" class="header-menu__link">Наши работы</a></li>
+                <li class="header-menu-item"><a href="#" class="header-menu__link">О нас</a></li>
+                <li class="header-menu-item"><a href="#" class="header-menu__link">Отзывы</a></li>
+                <li class="header-menu-item"><a href="tel:18000000000" class="header-menu__phone">1-800-000-0000</a></li>
+            </ul>
+            <button class="header-booking" id="request">Запись</button>            
+            <div class="header-socials">
+                <a class="header-socials__link" href="#"><img src="./images/FB.svg" alt=""></a>
+                <a class="header-socials__link" href="#"><img src="./images/twitter.svg" alt=""></a>
+                <a class="header-socials__link" href="#"><img src="./images/google-plus.svg" alt=""></a>            
+            </div>
+        </div>               
     </header>
     <div class="page-main">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="modal__close">×</span>
+                <img src="images/logo.png" class="modal__logo logo" alt="">
+                <form action="#" class="modal-form">
+                    <input type="name" placeholder="Ваше имя" name="name" class="modal-form__item" required>
+                    <input type="email" placeholder="Ваш e-mail" name="email" class="modal-form__item" required>
+                    <input type="date"  name="date" class="modal-form__item" required>
+                    <button type="submit" class="modal-form__btn">Отправить</button>
+                </form>
+                <p class="modal__text">Мы с вами свяжемся в ближайшее время для уточнения деталей</p>
+            </div>
+        </div> 
         <div class="container container_wide">
             <div class="page-main-content">
                 <h1 class="page-main__title">Индивидуальный подбор одежды</h1>
@@ -44,6 +59,7 @@
         <p class="page-main__text">+ANY SIZES</p>
     </div>
     <div class="page page-advantages">
+        <div class="page-advantages-block-white"></div>
         <div class="container">
             <div class="page-advantages-images">
                 <div>
@@ -86,8 +102,7 @@
                         <div class="page-advantages__icon"><img src="./images/icon22.png" alt=""></div>
                         <div>
                             <h4 class="page-list-item__title">100% доверие к качеству</h4>
-                            <p class="page-list-item__desc">Поможем Вам выглядеть потрясающе и привлекательно круглый год
-                                круглый.</p>
+                            <p class="page-list-item__desc">Поможем Вам выглядеть потрясающе и привлекательно круглый год.</p>
                         </div>
                     </div>
                 </div>
@@ -96,9 +111,9 @@
         </div>
     </div>
     <div class="page page-works">
-        <div class="page-works_squares_beige"></div>
+        <div class="page-works-square_beige"></div>
         <div class="container">
-            <div class="block-content">
+            <div class="page-works-content">
                 <p class="page-works__text">GALLERY</p>
                 <p class="page__subtitle">Наша модная одежда работает</p>
                 <h2 class="page__title">Модный размер не всегда подходит</h2>
@@ -111,12 +126,14 @@
             <div class="page-works-images">
                 <div>
                     <div class="page-works-images-item">
-                        <div class="page-works__square page-works__square_middle"></div>
-                        <img src="./images/blouses31.jpg" alt="" class="page-works__img">
+                        <div class="page-works__square page-works__square_middle">
+                            <img src="./images/blouses31.jpg" alt="">
+                        </div>                        
                     </div>
                     <div class="page-works-images-item">
-                        <div class="page-works__rectangle"></div>
-                        <img src="./images/jackets.jpg" alt="" class="page-works__img">
+                        <div class="page-works__rectangle">
+                            <img src="./images/jackets.jpg" alt="">
+                        </div>                        
                     </div>
                     <svg class="page-works__squares" xmlns="http://www.w3.org/2000/svg" width="83" height="67">
                         <path data-name="Rectangle 5 copy 9" d="M0 0h6.875v6.81H0V0zm15.219 0h6.875v6.81h-6.875V0zm15.218 0h6.875v6.81h-6.875V0zm15.25 0h6.875v6.81h-6.875V0zm15.219 0h6.875v6.81h-6.875V0zm15.219 0H83v6.81h-6.875V0zM0 15.06h6.875v6.78H0v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.218 0h6.875v6.78h-6.875v-6.78zm15.25 0h6.875v6.78h-6.875v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.219 0H83v6.78h-6.875v-6.78zM0 30.09h6.875v6.82H0v-6.82zm15.219 0h6.875v6.82h-6.875v-6.82zm15.218 0h6.875v6.82h-6.875v-6.82zm15.25 0h6.875v6.82h-6.875v-6.82zm15.219 0h6.875v6.82h-6.875v-6.82zm15.219 0H83v6.82h-6.875v-6.82zM0 45.16h6.875v6.78H0v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.218 0h6.875v6.78h-6.875v-6.78zm15.25 0h6.875v6.78h-6.875v-6.78zm15.219 0h6.875v6.78h-6.875v-6.78zm15.219 0H83v6.78h-6.875v-6.78zM0 60.19h6.875V67H0v-6.81zm15.219 0h6.875V67h-6.875v-6.81zm15.218 0h6.875V67h-6.875v-6.81zm15.25 0h6.875V67h-6.875v-6.81zm15.219 0h6.875V67h-6.875v-6.81zm15.219 0H83V67h-6.875v-6.81z" fill="#cfcfcf" fill-rule="evenodd"/>
@@ -124,19 +141,22 @@
                 </div>
                 <div>
                     <div class="page-works-images-item">
-                        <div class="page-works__square page-works__square_right"></div>
-                        <img src="./images/blouses32.jpg" alt="" class="page-works__img">
+                        <div class="page-works__square page-works__square_right">
+                            <img src="./images/blouses32.jpg">
+                        </div>                        
                     </div>
                     <div class="page-works-images-item">
-                        <div class="page-works__square page-works__square_right"></div>
-                        <img src="./images/dress.jpg" alt="" class="page-works__img">
-                        <svg class="page-works__paral" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
-                            <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
-                        </svg>
+                        <div class="page-works__square page-works__square_left">
+                            <img src="./images/dress.jpg" alt="">
+                            <svg class="page-works__paral" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
+                                <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
+                            </svg>
+                        </div>                    
                     </div>
                     <div class="page-works-images-item">
-                        <div class="page-works__square page-works__square_right"></div>
-                        <img src="./images/girl31.jpg" alt="" class="page-works__img">
+                        <div class="page-works__square page-works__square_right-middle">
+                            <img src="./images/girl31.jpg" alt="">
+                        </div>                        
                     </div>
                 </div>                                            
             </div>
@@ -144,9 +164,20 @@
     </div> 
     <div class="page page-about">
         <div class="container">
+            <div class="page-about-images">
+                <div class="page-about-img-wrap">
+                    <img src="./images/ethnic_patterns.jpg" alt="" class="page-about__img">
+                    <svg class="page-about__paral" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
+                        <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
+                    </svg>
+                    <svg class="page-about__paral page-about__paral_bottom" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
+                        <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
+                    </svg>
+                </div>                
+            </div>
             <div class="page-about-content">
                 <p class="page__subtitle">О нас</p>
-                <h2 class="page__title">Мы всегда сотрудничаем с лучшими производителями одежды</h2>
+                <h2 class="page__title">Работаем с лучшими дрессмейкерами</h2>
                 <p class="page__desc">
                     В оversize мы стараемся избегать ограничений, установленных
                     современным обществом, чтобы помочь Вам выглядеть потрясающе и
@@ -156,41 +187,38 @@
                 <p class="page__desc">В oversize мы стараемся избегать ограничений.</p>
                 <h4 class="page__title-small">100% доверие к качеству</h4>
                 <p class="page__desc">Поможем Вам выглядеть потрясающе и привлекательно круглый год</p>
-            </div>
-            <div class="page-about-images">
-                <div class="page-about__rectangle">
-                    <svg class="page-about__paral_top" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
-                        <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
-                    </svg>
-                    <svg class="page-about__paral page-about__paral_bottom" xmlns="http://www.w3.org/2000/svg" width="66" height="25">
-                        <path d="M5.5 0h9.35l-5.5 25H0zm17.05 0h9.35l-5.5 25h-9.35zM39.6 0h9.35l-5.5 25H34.1zm17.05 0H66l-5.5 25h-9.35z" fill="#e6d4c8" fill-rule="evenodd"/>
-                    </svg>
-                </div>
-                <img src="./images/ethnic_patterns.jpg" alt="" class="page-about__img">
-            </div>                      
+            </div>                                  
         </div>
     </div> 
     <div class="page-reviews">
         <div class="container container-wide">
             <div class="page-reviews-content">
-                <h2 class="page-title">Что наши клиенты говорят о нас</h2>
-                <p class="page__desc">
-                    Ищете проверенных стилистов, которые помогут подобрать качественный и 
-                    модный гардероб, выгодно подчеркивающий достоинства вашей внешности? 
+                <h2 class="page__title">Что говорят наши клиенты</h2>
+                <p class="page-reviews__desc">
+                    Ищете проверенных стилистов? 
                     Почитайте отзывы о нас, это поможет сделать правильный выбор.
                 </p>
                 <div class="page-reviews-slider">
-                    <div>
-                        <p class="page-reviews-slider__text">
-                            Здесь работают стилисты, которые очень любят свое дело и наслаждаются 
+                    <div class="page-reviews-slider-item">
+                        <span class="page-reviews-slider-item__quotes">&ldquo;</span>
+                        <p class="page-reviews-slider-item__text">
+                            <!-- Здесь работают стилисты, которые очень любят свое дело и наслаждаются 
                             процессом и результатом своей работы. С ними невероятно просто и легко 
                             все получается в лучшем виде. Я каждый раз с нетерпением жду встречи, 
                             потому что они невероятно теплые люди и результат нашей встречи вызывает 
-                            у меня восхищение, счастье, восторг и много любви :-)) Если вы хотите одеваться 
+                            у меня восхищение, счастье, восторг и много любви :-)) --> Если вы хотите одеваться 
                             комфортно и красиво, получать много комплиментов и радоваться своему отражению 
-                            в зеркале и радовать окружающих, тогда вам непременно к команде стилистов "Fashion stylist"!
+                            в зеркале и радовать окружающих, тогда вам непременно к команде стилистов "Fashion stylist"!                            
                         </p>
-                        <p class="page-reviews-slider__name">Маша Иванова</p>
+                        <span class="page-reviews-slider-item__quotes page-reviews-slider-item__quotes_right">&rdquo;</span>
+                        <p class="page-reviews-slider-item__name"><span>&mdash;</span> Маша Иванова</p>
+                    </div>
+                    <div class="page-reviews-slider-dots">
+                        <span class="page-reviews-slider-dots__item page-reviews-slider-dots__item_active"></span>
+                        <span class="page-reviews-slider-dots__item"></span>
+                        <span class="page-reviews-slider-dots__item"></span>
+                        <span class="page-reviews-slider-dots__item"></span>
+                        <span class="page-reviews-slider-dots__item"></span>
                     </div>
                 </div>
             </div>
@@ -208,40 +236,40 @@
     </div>
     <footer class="footer">
         <div class="container">
-            <img src="" alt="" class="logo">
+            <img src="images/logo.png" alt="" class="logo">
             <div class="wrapper">
                 <div class="info">
                     <div>
-                        <p class="info-title">Меню</p>
+                        <p class="info__title">Меню</p>
                         <ul class="info-list">
-                            <li class="info-list-item"><a href="#">Почему мы</a></li>
-                            <li class="info-list-item"><a href="#">Наши работы </a></li>
-                            <li class="info-list-item"><a href="#">О нас</a></li>
-                            <li class="info-list-item"><a href="#">Отзывы</a></li>
+                            <li class="info-list__item"><a href="#">Почему мы</a></li>
+                            <li class="info-list__item"><a href="#">Наши работы </a></li>
+                            <li class="info-list__item"><a href="#">О нас</a></li>
+                            <li class="info-list__item"><a href="#">Отзывы</a></li>
                         </ul>
                     </div>
                     <div>
-                        <p class="info-title">Контакты</p>
+                        <p class="info__title">Контакты</p>
                         <ul class="info-list">
-                            <li class="info-list-item">Телефон: <a href="tel:18000000000">1-800-000-0000</a></li>
-                            <li class="info-list-item">E-mail: <a href="mailto:admin@lyandex.ru">admin@lyandex.ru</a></li>
-                            <li class="info-list-item">Адрес: ул. Красная 15</li>
-                            <li class="info-list-item">Город: Москва, 353000</li>
+                            <li class="info-list__item">Телефон: <a href="tel:18000000000">1-800-000-0000</a></li>
+                            <li class="info-list__item">E-mail: <a href="mailto:admin@lyandex.ru">admin@lyandex.ru</a></li>
+                            <li class="info-list__item">Адрес: ул. Красная 15</li>
+                            <li class="info-list__item">Город: Москва, 353000</li>
                         </ul>
                     </div>
                     <div>
-                        <p class="info-title">Часы работы</p>
+                        <p class="info__title">Часы работы</p>
                         <p class="info-text">Пн-пт с 10.00 до 19.00</p>
                         <p class="info-text">Сб с 10.00 до 14.00</p>
                         <p class="info-text">Вс выходной</p>
                     </div>
                 </div>
                 <div class="feedback">
-                    <p class="feedback-title">Оставьте вашу электронную почту и мы с вами свяжемся</p>
-                    <div class="feedback-form">
-                        <input type="email" class="feedback-form__input">
-                        <button class="feedback-form__btn">Отправить</button>
-                    </div>
+                    <p class="feedback__title">Оставьте вашу электронную почту и мы с вами свяжемся</p>
+                    <form action="#" class="feedback-form">
+                        <input type="email"  class="feedback-form__input" placeholder="Ваш e-mail" required>
+                        <button type="submit" class="feedback-form__btn">Отправить</button>
+                    </form>
                 </div>
             </div>
             <div class="block-socials">

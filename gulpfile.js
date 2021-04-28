@@ -32,10 +32,7 @@ function images() {
     .pipe(dest('dist/images'))
 }
 function scripts() {
-    return src([
-        'node_modules/jquery/dist/jquery.js',
-        'app/js/main.js'
-    ])
+    return src('app/js/*.js')
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
