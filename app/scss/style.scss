@@ -66,6 +66,10 @@ body {
         max-width: 1600px;
         @media(max-width: 1536px) {
             width: 100%;
+            flex-wrap: wrap;            
+        }
+        @media(max-width: 1270px) {
+            
         }
     }
 }
@@ -75,6 +79,7 @@ body {
     &__logo {
         height: 78px;
         width: 192px;
+        margin-right: 10px;
     }
     &-menu {
         display: flex;
@@ -84,6 +89,19 @@ body {
         max-width: 1063px;
         height: 85px;
         background-color: #000;
+        @media(max-width: 1270px) {
+            display: none;
+        }
+        &-open {
+            display: none;
+            height: 43px;
+            width: 43px;
+            background-color: #e0c4b1;
+            @media(max-width: 1270px) {
+                display: block;
+                order: 1;
+            }
+        }
         &-item {
             list-style-type: none;
         }
@@ -97,15 +115,19 @@ body {
             &:hover {
                 background-color: #323130;
                 transition: 0.5s;
-}
+            }
         }
     }
     &-booking {
         @extend %btn-styles;
+        @media(max-width: 1270px) {
+            margin-left: auto;
+        }
                
     }
     &-socials {
         @extend %position;
+        margin-right: 20px;
         &__link {
             display: block;
             box-sizing: border-box;
