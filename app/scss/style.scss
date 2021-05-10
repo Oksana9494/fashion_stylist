@@ -19,7 +19,7 @@ $accent-color: #d7ae81;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     &:hover {
-        background-color: #323130;
+        background-color: #524f4d;
         transition:0.5s;
     } 
 }
@@ -105,7 +105,6 @@ body {
         margin-right: 10px;
         margin-top: 5px;
         @media(max-width: 1536px) {
-            width: 210px;
             margin-bottom: 10px;
         }
         @media(max-width: 992px) {
@@ -117,11 +116,11 @@ body {
     }
     &-menu {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         width: calc(100% - 536px);
         max-width: 1063px;
-        height: 85px;
+        height: 86px;
         background-color: #000;
         @media(max-width: 1536px) {
             margin-right: 20px;
@@ -159,13 +158,12 @@ body {
         &__link, &__phone {
             text-decoration: none;
             font-size: 18px;
-            font-weight: 500;
             letter-spacing: 0.7px;
             color: #fff;
             padding: 32.5px 20px;
             &:hover {
-                background-color: #323130;
-                transition: 0.5s;
+                background-color: #524f4d;
+                transition: 1s;
             }
         }
     }
@@ -284,13 +282,7 @@ body {
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
-        padding-top: 195px;
-        @media(max-width: 1366px) {
-            padding-top: 120px;
-        }
-        @media(max-width: 992px) {
-            padding-top: 0;
-        }
+        height: 320px;
     }
     &__title {
         font-size: 55px;
@@ -397,13 +389,8 @@ body {
         @media(max-width: 1536px) {
             height: 650px;
         }
-        @media(max-width: 1366px) {
-            //bottom: initial;
-            //top: 50px;
-        }
         @media(max-width: 1200px) {            
             height: 600px;
-            //top: 46px;
             left: 80px;
         }
         @media(max-width: 992px) {
@@ -447,6 +434,7 @@ body {
         }
     }
     .container {
+        align-items: center;
         @media(max-width: 992px) {
             flex-direction: column-reverse;
         }
@@ -1225,7 +1213,7 @@ body {
                     margin: 0 auto;
                 }
                 &:hover {
-                    background-color: #323130;
+                    background-color: #524f4d;
                     transition: 0.3s;
                 }
             }
