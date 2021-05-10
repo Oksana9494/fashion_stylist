@@ -1,23 +1,26 @@
-/* let modal  = document.getElementById("modal");
- let request = document.getElementById("request");
- let modalClose = document.getElementsByClassName("modal__close")[0];*/
+let modal  = document.getElementById("modal");
+let request = document.getElementsByClassName("request");
+let modalClose = document.getElementsByClassName("modal__close")[0];
 
+for(i = 0; i < request.length; i++) {
+   request[i].onclick = function () {
+      modal.style.display = "block";
+      document.body.style.overflowY = "hidden";
+      document.body.style.paddingRight = 15 + ("px ");
+   }
+}
 
-
- bfga.onclick = function () {
-    aghf.style.display = "block";
-    document.body.style.overflowY = "hidden";
- }
-
- cgg.onclick = function () {
-    aghf.style.display = "none";
+modalClose.onclick = function () {
+    modal.style.display = "none";
     document.body.style.overflowY = "scroll";
+    document.body.style.paddingRight = 0 + ("px ");
  }
 
- window.onclick = function (event) {
-    if (event.target == modalForm) {
-        aghf.style.display = "none";
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
         document.body.style.overflowY = "scroll";
+        document.body.style.paddingRight = 0 + ("px ");
     }
 }
 
