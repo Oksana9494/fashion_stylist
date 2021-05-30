@@ -10,19 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal__close">×</span>
+            <img src="images/logo.svg" class="modal__logo logo" alt="">
+            <form action="#" class="modal-form">
+                <input type="name" placeholder="Ваше имя" name="name" class="modal-form__item" required>
+                <input type="email" placeholder="Ваш e-mail" name="email" class="modal-form__item" required>
+                <input type="date"  name="date" class="modal-form__item" required>
+                <button type="submit" class="modal-form__btn">Отправить</button>
+            </form>
+            <p class="modal__text">Мы с вами свяжемся в ближайшее время для уточнения деталей</p>
+        </div>
+        </div> 
     <header class="header">
         <div class="container container_very-wide">
-            <a href="#"><img src="images/logo.png" alt="" class="header__logo"></a> 
-            <div class="header-menu-open">
+            <a href="#"><img src="images/logo.svg" alt="" class="header__logo"></a> 
+            <div class="header-menu-open" id="menuOpen">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="header-menu">
-                <li class="header-menu-item"><a href="#" class="header-menu__link">Почему мы</a></li>
-                <li class="header-menu-item"><a href="#" class="header-menu__link">Наши работы</a></li>
-                <li class="header-menu-item"><a href="#" class="header-menu__link">О нас</a></li>
-                <li class="header-menu-item"><a href="#" class="header-menu__link">Отзывы</a></li>
+                <li class="header-menu-item"><a href="#advantages" class="header-menu__link">Почему мы</a></li>
+                <li class="header-menu-item"><a href="#works" class="header-menu__link">Наши работы</a></li>
+                <li class="header-menu-item"><a href="#about" class="header-menu__link">О нас</a></li>
+                <li class="header-menu-item"><a href="#reviews" class="header-menu__link">Отзывы</a></li>
                 <li class="header-menu-item"><a href="tel:18000000000" class="header-menu__phone">1-800-000-0000</a></li>
             </ul>
             <button class="header-booking request">Запись</button>            
@@ -31,22 +44,29 @@
                 <a class="header-socials__link" href="#"><img src="./images/twitter.svg" alt=""></a>
                 <a class="header-socials__link" href="#"><img src="./images/google-plus.svg" alt=""></a>            
             </div>
-        </div>               
+        </div>  
+        <div class="header-mobile-menu" id="mobileMenu">            
+            <div class="header-mobile-menu-wrap">
+                <span class="header-mobile-menu__close">×</span>   
+                <img src="images/logo.svg" class="header-mobile-menu__logo logo" alt=""> 
+
+                <ul class="header-mobile-menu-list">
+                    <li class="header-mobile-menu-item"><a href="#advantages" class="header-mobile-menu__link">Почему мы</a></li>
+                    <li class="header-mobile-menu-item"><a href="#works" class="header-mobile-menu__link">Наши работы</a></li>
+                    <li class="header-mobile-menu-item"><a href="#about" class="header-mobile-menu__link">О нас</a></li>
+                    <li class="header-mobile-menu-item"><a href="#reviews" class="header-mobile-menu__link">Отзывы</a></li>
+                    <li class="header-mobile-menu-item"><a href="tel:18000000000" class="header-mobile-menu__phone">1-800-000-0000</a></li>
+                </ul>  
+                <div class="header-mobile-menu-socials">
+                    <a class="header-mobile-menu-socials__link" href="#"><img src="./images/FB.svg" alt=""></a>
+                    <a class="header-mobile-menu-socials__link" href="#"><img src="./images/twitter.svg" alt=""></a>
+                    <a class="header-mobile-menu-socials__link" href="#"><img src="./images/google-plus.svg" alt=""></a>    
+                </div>  
+                <button class="header-mobile-menu-booking request">Запись</button> 
+            </div>         
+        </div>             
     </header>
     <div class="page-main">
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="modal__close">×</span>
-                <img src="images/logo.png" class="modal__logo logo" alt="">
-                <form action="#" class="modal-form">
-                    <input type="name" placeholder="Ваше имя" name="name" class="modal-form__item" required>
-                    <input type="email" placeholder="Ваш e-mail" name="email" class="modal-form__item" required>
-                    <input type="date"  name="date" class="modal-form__item" required>
-                    <button type="submit" class="modal-form__btn">Отправить</button>
-                </form>
-                <p class="modal__text">Мы с вами свяжемся в ближайшее время для уточнения деталей</p>
-            </div>
-        </div> 
         <div class="container container_wide">
             <div class="page-main-content">
                 <h1 class="page-main__title">Индивидуальный подбор одежды</h1>
@@ -90,7 +110,7 @@
             </div>
             <div class="page-advantages-content">
                 <p class="page__subtitle">Почему мы</p>
-                <h2 class="page__title">Одного размера бывает недостаточно</h2>
+                <h2 class="page__title" id="advantages">Одного размера бывает недостаточно</h2>
                 <p class="page__desc">
                     В оversize мы стараемся избегать ограничений, установленных
                     современным обществом, чтобы помочь Вам выглядеть потрясающе и
@@ -122,14 +142,14 @@
             <div class="page-works-content">
                 <p class="page-works__text">GALLERY</p>
                 <p class="page__subtitle">Наша модная одежда работает</p>
-                <h2 class="page__title">Модный размер не всегда подходит</h2>
+                <h2 class="page__title" id="works">Модный размер не всегда подходит</h2>
                 <p class="page__desc">
                     В оversize мы стараемся избегать ограничений, установленных
                     современным обществом, чтобы помочь Вам выглядеть потрясающе и
                     привлекательно круглый год.
                 </p>
             </div>
-            <div class="page-works-images">
+            <div class="page-works-images" id="boxImg">
                 <div>
                     <div class="page-works-images-item">
                         <div class="page-works__square page-works__square_middle">
@@ -183,7 +203,7 @@
             </div>
             <div class="page-about-content">
                 <p class="page__subtitle">О нас</p>
-                <h2 class="page__title">Работаем с лучшими дрессмейкерами</h2>
+                <h2 class="page__title" id="about">Работаем с лучшими дрессмейкерами</h2>
                 <p class="page__desc">
                     В оversize мы стараемся избегать ограничений, установленных
                     современным обществом, чтобы помочь Вам выглядеть потрясающе и
@@ -199,25 +219,65 @@
     <div class="page-reviews">
         <div class="container container_wide">
             <div class="page-reviews-content">
-                <h2 class="page__title">Что говорят наши клиенты</h2>
+                <h2 class="page__title"  id="reviews">Что говорят наши клиенты</h2>
                 <p class="page-reviews__desc">
                     Ищете проверенных стилистов? 
                     Почитайте отзывы о нас, это поможет сделать правильный выбор.
                 </p>
                 <div class="page-reviews-slider">
-                    <div class="page-reviews-slider-item">
-                        <span class="page-reviews-slider-item__quotes">&ldquo;</span>
-                        <p class="page-reviews-slider-item__text">
-                            <!-- Здесь работают стилисты, которые очень любят свое дело и наслаждаются 
-                            процессом и результатом своей работы. С ними невероятно просто и легко 
-                            все получается в лучшем виде. Я каждый раз с нетерпением жду встречи, 
-                            потому что они невероятно теплые люди и результат нашей встречи вызывает 
-                            у меня восхищение, счастье, восторг и много любви :-)) --> Если вы хотите одеваться 
-                            комфортно и красиво, получать много комплиментов и радоваться своему отражению 
-                            в зеркале и радовать окружающих, тогда вам непременно к команде стилистов "Fashion stylist"!                            
-                        </p>
-                        <span class="page-reviews-slider-item__quotes page-reviews-slider-item__quotes_right">&rdquo;</span>
-                        <p class="page-reviews-slider-item__name"><span>&mdash;</span> Маша Иванова</p>
+                    <div class="page-reviews-slider-wrap">
+                        <div class="page-reviews-slider-scroll">
+                            <div class="page-reviews-slider-item">
+                                <span class="page-reviews-slider-item__quotes">&ldquo;</span>
+                                <p class="page-reviews-slider-item__text">
+                                    Если вы хотите одеваться 
+                                    комфортно и красиво, получать много комплиментов и радоваться своему отражению 
+                                    в зеркале и радовать окружающих, тогда вам непременно к команде стилистов "Fashion stylist"!                            
+                                </p>
+                                <span class="page-reviews-slider-item__quotes page-reviews-slider-item__quotes_right">&rdquo;</span>
+                                <p class="page-reviews-slider-item__name"><span>&mdash;</span>Маша Иванова</p>
+                            </div>
+                            <div class="page-reviews-slider-item">
+                                <span class="page-reviews-slider-item__quotes">&ldquo;</span>
+                                <p class="page-reviews-slider-item__text">
+                                    Здесь работают стилисты, которые очень любят свое дело и наслаждаются 
+                                    процессом и результатом своей работы. С ними невероятно просто и легко 
+                                    все получается в лучшем виде.
+                                </p>
+                                <span class="page-reviews-slider-item__quotes page-reviews-slider-item__quotes_right">&rdquo;</span>
+                                <p class="page-reviews-slider-item__name"><span>&mdash;</span>Оля Петрова</p>
+                            </div>
+                            <div class="page-reviews-slider-item">
+                                <span class="page-reviews-slider-item__quotes">&ldquo;</span>
+                                <p class="page-reviews-slider-item__text">
+                                    Я каждый раз с нетерпением жду встречи, 
+                                    потому что стилисты невероятно теплые люди и результат нашей встречи вызывает 
+                                    у меня восхищение, счастье, восторг и много любви :-))
+                                </p>
+                                <span class="page-reviews-slider-item__quotes page-reviews-slider-item__quotes_right">&rdquo;</span>
+                                <p class="page-reviews-slider-item__name"><span>&mdash;</span>Олеся Павлова</p>
+                            </div>
+                            <div class="page-reviews-slider-item">
+                                <span class="page-reviews-slider-item__quotes">&ldquo;</span>
+                                <p class="page-reviews-slider-item__text">
+                                    Я каждый раз с нетерпением жду встречи, 
+                                    потому что стилисты невероятно теплые люди и результат нашей встречи вызывает 
+                                    у меня восхищение, счастье, восторг и много любви :-))
+                                </p>
+                                <span class="page-reviews-slider-item__quotes page-reviews-slider-item__quotes_right">&rdquo;</span>
+                                <p class="page-reviews-slider-item__name"><span>&mdash;</span>Олеся Павлова</p>
+                            </div>
+                            <div class="page-reviews-slider-item">
+                                <span class="page-reviews-slider-item__quotes">&ldquo;</span>
+                                <p class="page-reviews-slider-item__text">
+                                    Я каждый раз с нетерпением жду встречи, 
+                                    потому что стилисты невероятно теплые люди и результат нашей встречи вызывает 
+                                    у меня восхищение, счастье, восторг и много любви :-))
+                                </p>
+                                <span class="page-reviews-slider-item__quotes page-reviews-slider-item__quotes_right">&rdquo;</span>
+                                <p class="page-reviews-slider-item__name"><span>&mdash;</span>Олеся Павлова</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="page-reviews-slider-dots">
                         <span class="page-reviews-slider-dots__item page-reviews-slider-dots__item_active"></span>
@@ -242,16 +302,16 @@
     </div>
     <footer class="footer">
         <div class="container">
-            <img src="images/logo.png" alt="" class="logo">
+            <img src="images/logo.svg" alt="" class="logo">
             <div class="wrapper">
                 <div class="info">
                     <div>
                         <p class="info__title">Меню</p>
                         <ul class="info-list">
-                            <li class="info-list__item"><a href="#">Почему мы</a></li>
-                            <li class="info-list__item"><a href="#">Наши работы </a></li>
-                            <li class="info-list__item"><a href="#">О нас</a></li>
-                            <li class="info-list__item"><a href="#">Отзывы</a></li>
+                            <li class="info-list__item"><a href="#advantages">Почему мы</a></li>
+                            <li class="info-list__item"><a href="#works">Наши работы </a></li>
+                            <li class="info-list__item"><a href="#about">О нас</a></li>
+                            <li class="info-list__item"><a href="#reviews">Отзывы</a></li>
                         </ul>
                     </div>
                     <div>
